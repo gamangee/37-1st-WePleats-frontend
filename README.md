@@ -1,3 +1,5 @@
+![wepleats_bar](https://user-images.githubusercontent.com/84329979/202771638-84c9b117-4a25-4696-8719-d67512056d24.jpg)
+
 ## [👉 WePleats 바로가기](http://wepleats.s3-website.ap-northeast-2.amazonaws.com/) 
 ### 프로젝트 소개
 `WePleats`는 밋밋하고 칙칙한 현대인의 책상을 보다 **다채로운 색상의 제품을 판매하는 사이트**입니다. 기존의 제품 카테고리와 더불어 색상별로 제품을 검색해주는 **컬러필터링 기능**까지 있는 것이 특징입니다.
