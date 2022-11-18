@@ -1,61 +1,41 @@
-## WePleats 프로젝트 Front-end 소개
+## [👉 WePleats 바로가기](http://wepleats.s3-website.ap-northeast-2.amazonaws.com/) 
+### 프로젝트 소개
 
-- 개발자들의 개성있는 책상을 만들 수 있도록 보다 다채로운 색상의 프로덕트 판매하는 사이트를 기획하였습니다.
-- 밋밋하고 칙칙한 개발자 책상이라는 편견은 이제 그만, `WePleats`는 하루종일 에서 일하는 개발자들의 개성을 표현해줄 수 있는 아이템을 추천해주는 곳입니다.
+`WePleats`는 밋밋하고 칙칙한 현대인의 책상을 보다 **다채로운 색상의 제품을 판매하는 사이트**입니다. 기존의 제품 카테고리와 더불어 색상별로 제품을 검색해주는 **컬러필터링 기능**까지 있는 것이 특징입니다.
+
+### 📌 선정 이유
+우리는 하루 대부분의 시간을 책상 앞에 앉아 일을 합니다.<br>
+문득 현대인의 필수품인 컴퓨터, 키보드, 마우스 등 거의 모든 **전자기기가 검은색 아니면 회색이라는 점이 아쉽다는 생각**이 들었습니다.<br>
+👉 **실제로** **사용자가 좋아하는 색으로 책상을 좀 더 화사하게 꾸밀 수 있는 제품과 사이트가 있었으면 좋겠다**는 생각에서 프로젝트를 시작하게 되었습니다.
 
 ### 개발 인원 및 기간
 
-- 개발기간 : 2022/9/19 ~ 2022/9/30
-- 개발 인원 : 프론트엔드 3명, 백엔드 2명
-- [백엔드 github 링크](https://github.com/wecode-bootcamp-korea/37-1st-WePleats-backend)
+`기간` : 2022/9/19 ~2022/9/30 <br>
+`인원` : 프론트엔드 3명, 백엔드 2명
 
-### 프로젝트 선정이유
-
-- 커머스 사이트 중에서 개발하는 데 기본적인 flow를 모둔 갖춘 사이트로 회원가입/로그인, 장바구니, 상품구매, 리뷰평 작성까지 모두 경험할 수 있어 선정하게 되었습니다.
-
-### 데모 영상(이미지 클릭)
-
-[프로젝트 영상](https://www.youtube.com/watch?v=Mao03-WqfxQ)
-
-<br>
-
-## 구현한 기능 소개
+### 구현 기능
 
 1. Nav
-- 마우스 hover시 드롭다운 메뉴가 생김
-- 제품 카테고리 클릭 시 해당 페이지로 이동
-- '+5000P' 클릭 시 회원 가입 페이지로 이동
-- 회원가입 완료 후 로그인 시 '+5000P' text가 유저아이디로 변경
-- 로그인 후 장바구니에 담은 제품 개수 표시
-- 로그아웃 버튼 클릭시 로그아웃 
+- 드롭다운 메뉴
+- 회원가입/로그인/장바구니/로그아웃 기능 구현
 
 2. 제품 상세 페이지
-- 페이지 스크롤 시 오른쪽 가격정보 부분은 고정되어 있고 왼쪽 이미지 정보만 계속 보여짐
-- 계속 스크롤 되다가 Footer 부분에 도달 시에 고정되어 있던 부분이 풀리고 Footer내용만 보여줌
-- 작은 이미지 마우스 hover시 큰 이미지에서 보여짐
-- 배송/교환/반품/사이즈 정보 버큰 클릭시 펼져보이게 구현
-- 수량 버튼 클릭시 자동으로 총 금액 변경
-- 장바구니/구매하기 버큰 클릭시 해당 페이지로 이동
+- 제품 이미지를 포함한 가격 정보 및 디테일 페이지 UI
+- 배송/교환/반품/사이즈 정보가 들어있는 아코디언 컴포넌트 생성 및 재사용 
 
 3. 구매평
-- 제품 상세 페이지 안에 해당 제품에 대한 리뷰평을 각각 작성 가능
-- 회원제 사이트이기 때문에 구매를 해야 구매평 작성이 가능하며 한 제품 당 하나의 구매평만 작성이 가능
-- 구매평 등록 버큰 클릭시 이미지 업로드와 코멘트 작성이 가능한 모달창이 뜸
-- 구매평 작성 완료 후에는 자신이 작성한 구매평에만 수정과 삭제 버튼이 생성
-- 수정 버튼 클릭시 작성했던 이미지와 구매평이 적혀있는 모달창이 뜸
-- 수정 완료 버튼 클릭 시 구매평 리스트에 수정됨
-- 삭제 버튼 클릭 시 해당 구매평 삭제 가능
+- 이미지 업로드/수정/삭제 가능한 구매평 모달창 구현
+- 이미지가 있는 구매평만 볼 수 있는 필터링 기능
+- 쿼리스트링이 아닌 자체 페이지네이션 개발
+
+4. 최소한의 정보만 담긴 심플한 Footer
 
 ### 적용 기술
 
-- Front-End : <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
-
-- Back-End : <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"> <img src="https://img.shields.io/badge/express-D22128?style=for-the-badge&logo=express&logoColor=white"> <img src="https://img.shields.io/badge/JSON Web TOKENS-FDEE21?style=for-the-badge&logo=JSON Web TOKENS&logoColor=white"> <img src="https://img.shields.io/badge/Bcrypt-003A70?style=for-the-badge&logo=Let's Encrypt&logoColor=white"> <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/multer-1BB76E?style=for-the-badge&logo=Imgur&logoColor=white"> 
- 
-- Common : <img src="https://img.shields.io/badge/aws-232F3E?style=for-the-badge&logo=Amazon AWS&logoColor=white"> <img src="https://img.shields.io/badge/RestFul API-009688?style=for-the-badge&logo=FastAPI&logoColor=white">
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
 
 ### 회고
-[기술블로그](https://velog.io/@gamangee/series/Projects)
+[👉 기술블로그 바로가기](https://velog.io/@gamangee/WEPLEATS-1%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%B5%9C%EC%A2%85-%ED%9A%8C%EA%B3%A0)
 
 ### 전체 페이지 소개
 
